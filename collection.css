@@ -1,0 +1,160 @@
+html {
+    font-family: "Mada", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 370;
+      font-style: normal;
+      font-size: 13px;
+  }
+  
+  a {
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  body {
+    margin: 0;
+    width: 100%;
+  }
+
+  #title {
+    margin-top: 100px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 26px;
+    text-transform: uppercase;
+  }
+
+  #gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    text-transform: uppercase;
+  }
+  
+  #gallery .picture {
+    margin: 10px;
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
+  
+  #gallery img {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .price {
+    font-weight: bold;
+  }
+  
+  nav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-color: white;
+    height: 72px;
+    width: 100%;
+    margin: 0px;
+  }
+  
+  header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  #leftnav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin-bottom: 5px;
+  }
+  
+  #logo {
+    height: 40px;
+    width: 95px;
+    margin: 5px 40px;
+  }
+
+  #headerLink {
+    display: flex;
+    margin: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+  #headerLink a {
+    margin: 8px;
+    color: black;
+  }
+  
+  #headerLink a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+  }
+  
+  #vipButton a {
+    background-color: rgb(188, 59, 141);
+    color: white;
+    border-radius: 38px;
+    padding: 1px 12px; 
+  }
+  
+  #vipButton a:hover {
+    text-decoration: none;
+  }
+  
+  @media (max-width: 1000px) {
+    #vipButton {
+      display: none;
+    }
+  }
+  
+  #menu {
+    display: none;
+    margin-bottom: 15px;;
+  }
+  
+  #menu div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+  }
+  
+  @media (max-width: 850px) {
+    #headerLink {
+      display: none;
+      }
+    
+    #menu {
+      display: block;
+    }
+  }
+  
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 500,
+    'GRAD' 0,
+    'opsz' 24;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+}
+
+.material-symbols-outlined:hover {
+    cursor: pointer;
+}
+
+.fill {
+  font-variation-settings:
+  'FILL' 1
+}

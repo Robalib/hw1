@@ -1,0 +1,123 @@
+
+body{
+	font-family: "Mada", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 370;
+    font-style: normal;
+    font-size: 13px;
+}
+
+#ricerca{
+	margin-top: 50px;
+	position:relative;
+	display:flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;	
+	
+}
+
+#ricerca form h1{
+	font-size:40px;
+
+}
+
+#ricerca form input{
+    font-size: 15px;
+    border: inherit;
+	border:2px solid black;
+    color:black;
+    outline:none;
+    padding:10px;
+    margin: 10 0 10 0;
+}
+
+.unsplash{
+	
+	display:flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.unsplash img{
+	padding-left:5px ;
+	width:15px;
+	height: 15px;
+	
+}
+
+section#errore{
+	text-align: center;
+	color:red;
+	font-size:30px;
+}
+
+.container{
+	position:relative;
+	width:80%;
+	margin:auto;
+    margin-top: 50px;
+
+}
+
+#results {
+	display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+#results .image{
+	margin: 10px;
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+
+#results .image img {
+    max-width: 100%;
+	height: 90%;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#modale {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+
+#modale img {
+	height: auto;
+	max-height: 90%;
+	border: 3px solid black;
+	border-radius: 20px;
+}
+
+.no-scroll {
+	overflow: hidden;
+}
+
+.hidden {
+	display: none !important; 
+}
+
+@media (max-width: 900px){
+
+	#results {
+		grid-template-columns: repeat(3,1fr);
+	}
+
+
+}
